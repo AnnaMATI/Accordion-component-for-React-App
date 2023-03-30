@@ -25,10 +25,10 @@ class Accardion extends Component {
       <div className="item">
         <div className="title" onClick={this.handleClick}>
           <h3>{item.name}</h3>
-          <p>{text === false ? "+" : "-"}</p>
+          <p>{text === false ? "See" : "Hide"}</p>
         </div>
         <div className="content show">
-         {text? "The capital is "+item.capital : ""}
+         {text? "The capital city  is "+item.capital : ""}
          {/* {text && item.capital} */}
         </div>
       </div>

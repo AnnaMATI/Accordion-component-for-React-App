@@ -34,4 +34,5 @@
 .content {
   height: auto;
   max-height: 9999px;
+  font-style: italic;
 }

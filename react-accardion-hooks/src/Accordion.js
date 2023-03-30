@@ -1,5 +1,6 @@
 import {useState} from 'react';
 
+
 function Accardion({item}){
 
     const [text, setText] = useState(false);
@@ -12,7 +13,7 @@ function Accardion({item}){
         <div className="item" >
             <div className="title" onClick={handleClick}>
               <h3>{item.name}</h3>
-              <p>{text === false ? "+" : "-"}</p>
+              <p>{text === false ? "See" : "Hide"}</p>
             </div>
             <div className="content show">
                 {text && item.capital}
